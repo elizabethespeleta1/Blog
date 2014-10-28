@@ -7,7 +7,10 @@ require_once(__DIR__ . "/../model/database.php");
 //in this connection variable, theres class or object that accesses info on our mysqli server
 $connection = new mysqli($host, $username, $password);
 
+//this is where we check if theres a connection error
 if($connection->connect_error){
+
+//there is an error and were killing the program& were echoing whats wrong with it
 	die("error: " . "$connection->connect_error");
 }
 
@@ -24,5 +27,6 @@ else{
 	echo "Database already exists";
 }
 
+//we are closing the connection
 $connection->close();
 
