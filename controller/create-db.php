@@ -18,9 +18,11 @@ if($connection->connect_error){
 $exists = $connection->select_db($database);
 
 //*note the ! means its false
+// this is creating a database if it doesnt exist& running a query& there is sql language in the ()
 if(!$exists){
 	$query = $connection->query("CREATE DATABASE $database");
 
+//this is outputting a message
 if($query){
 	echo "successfully executed DATABASE:" . $database;
 }
