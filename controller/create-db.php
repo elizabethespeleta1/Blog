@@ -1,4 +1,6 @@
 <?php
+//this is a controller, this is where the user interacts with the controller in order to modify anything in the model
+
 require_once(__DIR__ . "/../model/database.php");
 
 $connection = new mysqli($host, $username, $password);

@@ -1,4 +1,5 @@
 <?php
+// this is where you store info
 $host = "localhost";
 $username = "root";
 $password = "root";
