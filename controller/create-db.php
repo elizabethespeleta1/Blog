@@ -1,8 +1,10 @@
 <?php
 //this is a controller, this is where the user interacts with the controller in order to modify anything in the model
 
+//in the () this is the path to the file we want included
 require_once(__DIR__ . "/../model/database.php");
 
+//in this connection variable, theres class or object that accesses info on our mysqli server
 $connection = new mysqli($host, $username, $password);
 
 if($connection->connect_error){
