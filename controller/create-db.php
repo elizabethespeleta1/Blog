@@ -11,7 +11,7 @@ $connection = new mysqli($host, $username, $password);
 if($connection->connect_error){
 
 //there is an error and were killing the program& were echoing whats wrong with it
-	die("error: " . "$connection->connect_error");
+	die("<p>error: " . $connection->connect_error . "</p>");
 }
 
 //this is gonna access the database
@@ -24,13 +24,13 @@ if(!$exists){
 
 //this is outputting a message
 if($query){
-	echo "successfully executed DATABASE:" . $database;
+	echo "<p>successfully executed DATABASE:" . $database . "</p>";
 }
 }
 
 //if this runs this means a database already exists
 else{
-	echo "Database already exists";
+	echo "<p>Database already exists</p>";
 }
 
 //*note we created a table within the database, 
@@ -44,6 +44,13 @@ $query = $connection->query("CREATE TABLE posts ("
 	. "post text NOT NULL,"
 	. "PRIMARY KEY (id))");
 
+
+if($query){
+	echo "succesfully create table: posts";
+}
+else{
+	echo "<p>$connection->error</p>";
+}
 
 //we are closing the connection
 $connection->close();
