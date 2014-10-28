@@ -14,8 +14,10 @@ if($connection->connect_error){
 	die("error: " . "$connection->connect_error");
 }
 
+//this is gonna access the database
 $exists = $connection->select_db($database);
 
+//*note the ! means its false
 if(!$exists){
 	$query = $connection->query("CREATE DATABASE $database");
 
