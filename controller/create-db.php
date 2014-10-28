@@ -27,6 +27,8 @@ if($query){
 	echo "successfully executed DATABASE:" . $database;
 }
 }
+
+//if this runs this means a database already exists
 else{
 	echo "Database already exists";
 }
