@@ -45,6 +45,8 @@ $query = $connection->query("CREATE TABLE posts ("
 	. "PRIMARY KEY (id))");
 
 //if this is true its been successfully created
+//*note you can only create a table once
+//else-> not true / table already exists
 if($query){
 	echo "succesfully create table: posts";
 }
