@@ -44,7 +44,7 @@ $query = $connection->query("CREATE TABLE posts ("
 	. "post text NOT NULL,"
 	. "PRIMARY KEY (id))");
 
-
+//if this is true its been successfully created
 if($query){
 	echo "succesfully create table: posts";
 }
