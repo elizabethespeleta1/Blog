@@ -7,6 +7,7 @@
 	require_once(__DIR__ . "/view/header.php");
 //it has inserted code from footer and putting it in index php
 	require_once(__DIR__ . "/view/footer.php");
+	require_once(__DIR__ . "/view/navigation.php");
 	require_once(__DIR__ . "/controller/create-db.php");
 ?>
 
