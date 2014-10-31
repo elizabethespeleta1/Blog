@@ -17,4 +17,8 @@
 		<!--text area is for allows us to type a lot of text -->
 		<textarea name="post"></textarea>
 	</div>
+
+	<div>
+		<button type="submit">Submit</button>
+	</div>
 </form>
