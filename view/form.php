@@ -19,6 +19,7 @@
 	</div>
 
 	<div>
+		<!--the button tag makes a button -->
 		<button type="submit">Submit</button>
 	</div>
 </form>
