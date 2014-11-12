@@ -1,0 +1,84 @@
+#bodydoe{
+	background:url(typewriter.jpg);
+	background: no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: 100%;
+}
+
+#bodytho{
+	background: no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: 100%;
+}
+
+h1{
+	font-family: 'Prata', serif;
+}
+
+ul{
+	list-style-type: none;
+}
+
+a:link{
+	font-family: 'Prata', serif;
+	font-size: 40px;
+	text-decoration: none;
+	background-color:white;
+	color:black;
+	display:inline-block;
+	text-align:center;
+	padding: 20px 30px 20px 30px;
+	margin: 10px 10px 10px 500px;
+}
+a:active{
+	color: black;
+}
+a:visited{
+	color: black;
+}
+
+a:hover{
+	background-color:black;
+	color:white;
+}
+
+p{
+	background-color: white;
+	width: 150px;
+	font-family: 'Ubuntu Mono', ;
+	font-size: 30px;
+	padding: 20px 30px 20px 30px;
+	margin: 10px;
+}
+
+@media (max-width:320px){
+	body{
+		background: no-repeat center center fixed;
+	}
+	
+	li {
+		display: list-item;
+		text-align: -webkit-match-parent;
+	}
+
+	a{
+		font-size: 20px;
+	}
+
+	p{
+		margin:25px;
+	}
+
+	h1{
+		margin:10px;
+	}
+
+}
+
+@media (max-width: 1024px){
+
+}

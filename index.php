@@ -1,4 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body id="bodytho" style="background-image:url(water.jpg)">
 
+</body>
+</html>
 <?php
 //view is probably where you'll get info from the model or have html code
 //* note __DIR__ concatinates

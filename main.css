@@ -1,0 +1,126 @@
+
+#bodydoe{
+	background-image:url(typewriter.jpg);
+	background: no-repeat center center fixed;
+	-webkit-background-size: cover; 
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: 100%;
+	text-align: center;
+}
+
+
+#bodytho{
+	background-image:url(water.jpg);
+	width: 100%; 
+	height: 100%;
+	background: no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: 100%;
+}
+
+h1{
+	font-family: 'Prata', serif;
+}
+
+ul{
+	list-style-type: none;
+}
+
+li {
+		display: list-item;
+		
+	}
+
+a:link{
+	font-family: 'Prata', serif;
+	font-size: 40px;
+	list-style-type: none;
+	text-decoration: none;
+	background-color:white;
+	color:black;
+	display:inline-block;
+	text-align:center;
+	padding: 20px 30px 20px 30px;
+	margin: 10px 10px 10px 500px;
+}
+	a:active{
+	list-style-type: none;
+	text-decoration: none;
+	color: green;
+	background-color:red;
+
+	}
+
+	a:visited{
+	list-style-type: none;
+	text-decoration: none;
+	color:black;
+	}
+
+	p {
+	background-color: white;
+	color:black;
+	width: 500px;
+	text-align: center;
+	font-family: 'Ubuntu Mono', ;
+	font-size: 20px;
+	padding: 20px 30px 20px 30px;
+	margin: 20px 10px 10px 10px;
+	}
+
+@media (max-width:320px){
+	body{
+		background: no-repeat center center fixed;
+		width: 100%;
+		height: 100%;
+	}
+
+	li {
+		display: list-item;
+		
+	}
+
+	a{
+		font-size: 20px;
+		padding:10px 15px 10px 15px;
+		margin:5px 5px 5px 150px;
+	}
+
+		a:active{
+	list-style-type: none;
+	text-decoration: none;
+	color: black;
+	}
+
+	a:visited{
+	list-style-type: none;
+	text-decoration: none;
+	color: black;
+	}
+
+	a:hover {
+	list-style-type:none;
+	text-decoration:none;
+	background-color: black;
+	color:white;
+	}
+
+	p{
+		width:40px;
+		margin:25px;
+		font-size:15px;
+		text-align:center;
+	}
+
+	h1{
+		margin:10px;
+	}
+
+}
+
+@media (max-width: 1024px){
+
+}
