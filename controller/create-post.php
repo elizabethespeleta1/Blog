@@ -3,7 +3,7 @@
 	//require so we have access to variables in database.php
 	// used info to create a new mysqli
 	
-	require_once(__DIR__ . "/../model/database.php");
+	require_once(__DIR__ . "/../model/config.php");
 
 	//you created a connection to a database
 	$connection = new mysqli($host,$username,$password,$database);

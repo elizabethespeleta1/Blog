@@ -11,7 +11,7 @@
 
 	<!-- first div is for title -->
 	<div>
-		<!--label indicates what it is -->
+		<!--label indicates  it is -->
 		<label for="title">Title: </label>
 		<!--input is for text usually for one line -->
 		<input type="text" name="title"/>
