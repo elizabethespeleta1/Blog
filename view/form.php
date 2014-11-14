@@ -9,23 +9,32 @@
 	<form method="post" action="<?php echo $path . "controller/create-post.php"; ?>">
 	<!--form it'll take info and send it to the table -->
 
+	<div class="container">
+
 	<!-- first div is for title -->
-	<div>
+	<div class="row">
 		<!--label indicates  it is -->
+		<div class="col-md-4">
 		<label for="title">Title: </label>
 		<!--input is for text usually for one line -->
 		<input type="text" name="title"/>
+		</div>
 	</div>
 
 	<!--second div if for post -->
-	<div>
+	<div class="row">
+		<div class="col-md-4">
 		<label for="post">Post: </label>
 		<!--text area is for allows us to type a lot of text -->
 		<textarea name="post"></textarea>
+		</div>
 	</div>
 
 	<div>
 		<!--the button tag makes a button -->
 		<button type="submit">Submit</button>
 	</div>
+
+	</div>
+
 </form>
