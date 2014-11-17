@@ -44,8 +44,14 @@ class Database {
 
 	}
 
-	//when your going to close the function
+	//when your going to use this function when you close the connection
 	public function closeConnection(){
+		//isset checks if the variable has been set or not/ if theres something in the variable
+		//if there isnt it'll return null and the if statement wont work
+		//if isset finds that theres is info it will execute the lines in the middle
+		if(isset$this->connection)){
+			$this->connection->close();
+		}
 
 	}
 
