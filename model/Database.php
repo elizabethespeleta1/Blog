@@ -57,8 +57,20 @@ class Database {
 
 	//this string can be located in a variable or an actual string 
 	//but it will be a variable in the end
-	public function query($string){
 
+	public function query($string){
+		//we are opening a connection, so it runs function openConnection n all the lines of code inside openConnection get executed
+		$this->openConnection();
+
+		//this is execute a query in the database
+		//it uses the string of text to query the database here
+		$query = $this->connection->query($string);
+
+		//your closing the connection
+		$this->closeConnection();
+
+		//your returning the results
+		return $query;
 	}
 }
 
