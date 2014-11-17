@@ -33,6 +33,14 @@ class Database {
 
 	//in this function your gonna open a connection and use
 	public function openConnection(){
+		//creating a new mysqli
+		$this->connection = new mysqli($this->host,$this->username,$this->password,$this->database);
+
+		//this is where we check if theres a connection error
+		if($this->connection->connect_error){
+			//there is an error and were killing the program& were echoing whats wrong with it
+			die("<p>error: " . $this->connection->connect_error . "</p>");
+		}
 
 	}
 
