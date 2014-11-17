@@ -32,6 +32,8 @@ h1{
 
 
 
+/* link css */
+
 ul{
 	list-style-type: none;
 }
@@ -113,6 +115,8 @@ a:link{
 	background-color: black;
 	color:white;
 	}
+
+/* link css ends*/
 
 	p{
 		width:40px;

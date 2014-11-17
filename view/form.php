@@ -32,7 +32,8 @@
 
 	<div>
 		<!--the button tag makes a button -->
-		<button type="submit">Submit</button>
+		<button id="submit" type="submit">Submit</button>
+		
 	</div>
 
 	</div>
