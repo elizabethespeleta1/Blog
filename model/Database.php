@@ -32,6 +32,35 @@ class Database {
 		$this->username = $username;
 		$this->password = $password;
 		$this->database = $database;
+
+		//in this connection variable, theres class or object that accesses info on our mysqli server
+		$this->connection = new mysqli($host, $username, $password);
+
+		//this is where we check if theres a connection error
+		if($this->connection->connect_error){
+
+			//there is an error and were killing the program& were echoing whats wrong with it
+			die("<p>error: " . $this->connection->connect_error . "</p>");
+		}
+
+		//this is gonna access the database
+		$exists = $this->connection->select_db($database);
+
+		//*note the ! means its false
+		// this is creating a database if it doesnt exist& running a query& there is sql language in the ()
+		if(!$exists){
+			$query = $this->connection->query("CREATE DATABASE $database");
+
+			//this is outputting a message
+			if($query){
+				echo "<p>successfully executed DATABASE:" . $database . "</p>";
+			}
+		}
+
+			//if this runs this means a database already exists
+			else{
+				 // echo "<p>Database already exists</p>";
+			}
 	}
 
 	//in this function your gonna open a connection and use

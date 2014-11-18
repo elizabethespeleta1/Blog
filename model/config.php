@@ -1,5 +1,8 @@
 <?php
-//is the path to all our project files
+
+	require_once(__DIR__ . "/Database.php");
+
+	//is the path to all our project files
 	$path = "/blog/";
 
 //this code isnt in database anymore because i refactored my code
