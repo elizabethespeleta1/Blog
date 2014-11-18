@@ -30,7 +30,7 @@ if($query){
 
 //if this runs this means a database already exists
 else{
-	echo "<p>Database already exists</p>";
+	 // echo "<p>Database already exists</p>";
 }
 
 //*note we created a table within the database, 
@@ -51,7 +51,7 @@ if($query){
 	echo "succesfully create table: posts";
 }
 else{
-	echo "<p>$connection->error</p>";
+	// echo "<p>$connection->error</p>";
 }
 
 //we are closing the connection

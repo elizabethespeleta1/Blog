@@ -17,6 +17,9 @@ class Database {
 	private $database;
 
 
+//* note a function is a block of code that can be used repeatedly
+
+
 //* your doing this so you don't have to repeat alot of the code
 
 	//this file needs to be public needs to accessed in any file
