@@ -6,7 +6,7 @@
 	require_once(__DIR__ . "/../model/config.php");
 
 	//you created a connection to a database
-	$connection = new mysqli($host,$username,$password,$database);
+	//$connection = new mysqli($host,$username,$password,$database);
 
 
 	//filer_input it validates and sanitizes the inputs
@@ -25,4 +25,4 @@
 		echo "<p> connection->error </p>";
 	}
 
-	$connection->close();
+	//$connection->close();

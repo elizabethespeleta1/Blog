@@ -11,3 +11,9 @@ $host = "localhost";
 $username = "root";
 $password = "root";
 $database = "blog_db";
+
+//this is a database object
+//this new object is going to be stored in connection
+//in connection you have acccesed to the functions in database
+//this Database object helps query on the database
+$connection = new Database($host, $username, $password, $database);
