@@ -15,6 +15,9 @@ class Database {
 	private $password;
 	//for the database
 	private $database;
+	//this is public because we want access within create-db
+	//
+	public $error;
 
 
 //* note a function is a block of code that can be used repeatedly
@@ -81,7 +84,7 @@ class Database {
 		//isset checks if the variable has been set or not/ if theres something in the variable
 		//if there isnt it'll return null and the if statement wont work
 		//if isset finds that theres is info it will execute the lines in the middle
-		if(isset$this->connection)){
+		if(isset ($this->connection)){
 			$this->connection->close();
 		}
 
@@ -97,6 +100,12 @@ class Database {
 		//this is execute a query in the database
 		//it uses the string of text to query the database here
 		$query = $this->connection->query($string);
+
+		//this conditional statement is to check the status of the query
+		//this tells us if the is false
+		if(!$query){
+			$this->error = $this->connection->error;
+		}
 
 		//your closing the connection
 		$this->closeConnection();
