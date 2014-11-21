@@ -10,7 +10,7 @@
 	$path = "/blog/";
 
 	// this is where you store info
-	//* note you dont need a closing tag when there is only php
+//* note you dont need a closing tag when there is only php
 
 	//you are storing database server information here
 	$host = "localhost";
@@ -20,7 +20,7 @@
 
 	//this conditional statement is to check if session&connection exists
 	//isset is to check if the variables have value
-if(!isset($_SESSION["connection"])){
+	if(!isset($_SESSION["connection"])){
 
 	//this is a database object
 	//this new object is going to be stored in connection

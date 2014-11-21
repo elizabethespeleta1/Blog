@@ -15,14 +15,14 @@
 	$post = filter_input(INPUT_POST, "post", FILTER_SANITIZE_STRING);
 
 	// this query is to insert things into our table
-	$query = $connection->query("INSERT INTO posts SET title = '$title', post = '$post' ");
+	$query = $_SESSION["connection"]->query("INSERT INTO posts SET title = '$title', post = '$post' ");
 
 	//this is to check if the query works or not
 	if($query){
 		echo "<p>Successfully inserted post: $title </p>";
 	}
 	else{
-		echo "<p> connection->error </p>";
+		echo "<p>" . $_SESSION["connection"]->error . "</p>";
 	}
 
 	//$connection->close();
