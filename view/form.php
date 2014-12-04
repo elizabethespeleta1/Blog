@@ -1,8 +1,13 @@
 <?php
   require_once(__DIR__ . "/../model/config.php")
 ?>
-	<!-- indicates what your about to see -->
-	<h1> Create Blog Post </h1>
+	
+	<header>
+
+		<!-- indicates what your about to see -->
+		<h1> Create Blog Post </h1>
+
+	</header>
 
 	<!-- method is sending data -->
 	<!-- action is putting a path from form to create-post -->
