@@ -10,5 +10,4 @@
 </head>
 <body>
 
-<div class="header">sweg booooi</div>
 <!-- this is where you can insert all your style sheets-->
