@@ -12,7 +12,7 @@
 		while($row = mysqli_fetch_array($result)){
 
 			//making a div named post
-			echo "<div class = 'post'>";
+			echo "<div class = 'posts'>";
 
 			// were using h2 so the title is larger and were grabbing from the row the title is in
 			echo "<h2>" . $row['title'] . "</h2>";
@@ -21,11 +21,13 @@
 			echo "<br />";
 
 			//this is grabbing from the row our posts are in
-			echo "<p>" . $row['post'] . "</h1>";
+			echo "<p>" . $row['post'] . "</p>";
 
 			//this is for space at the bottom
 			echo "<br/>";
 			
+			echo "<p> Posted on: " . $row['DateTime'] . "</p>";
+
 			// this is closing the div
 			echo "</div>";
 		}
