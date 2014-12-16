@@ -8,15 +8,16 @@
 	//getting it by the name email
 	//sanitizing the input email
 	$email = filter_input(INPUT_POST, "email", FILTER_SANITIZE_EMAIL);
+
 	//were filtering an input and getting it from the post method
 	//getting it by the name username
 	//sanitizing the input username by string 
 	$username = filter_input(INPUT_POST, "username", FILTER_SANITIZE_STRING);
+
 	//were filtering an input and getting it from the post method
 	//getting it by the name password
 	//sanitizing the input password by string 
 	$password = filter_input(INPUT_POST, "password", FILTER_SANITIZE_STRING);
-
 
 	// using $5$ 5000 times
 	//uniqid generates a random number
@@ -39,7 +40,6 @@
 
 	if($query){
 		echo "successfully created user: $username";
-
 	}
 	else{
 		echo "<p>" . $_SESSION["connection"]->error . "</p>";

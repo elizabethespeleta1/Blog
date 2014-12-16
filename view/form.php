@@ -1,21 +1,21 @@
 <?php
+
   require_once(__DIR__ . "/../model/config.php");
-
-
 
   //require because we need the function in login-verify to check if user is logged in or not
   require_once(__DIR__ . "/../controller/login-verify.php");
 
   //if statement will run the function authenticateUser
   if(!authenticateUser()){
+
   		//header is going to take a string and the string is a location
   		header("Location: " . $path . "index.php");
+
   		//stop the page from loading
   		die();
   }
 
 ?>
-	
 
 	<!-- indicates what your about to see -->
 	<h1> Create Blog Post </h1>
@@ -36,12 +36,10 @@
 	</div>
 
 	<!--second div if for post -->
-	<div class="row">
 		<label for="post">Post: </label>
 		<!--text area is for allows us to type a lot of text -->
 		<textarea name="post"></textarea>
-	</div>
-
+	
 	<div>
 		<!--the button tag makes a button -->
 		<button id="submit" type="submit">Submit</button>

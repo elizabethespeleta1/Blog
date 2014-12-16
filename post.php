@@ -1,6 +1,6 @@
 <html>
-<body id="bodydoe" style="background-image: url(typewriter.jpg)">
-</body>
+	<body id="bodydoe" style="background-image: url(typewriter.jpg)">
+	</body>
 </html>
 
 
