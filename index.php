@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title></title>
-	</head>
+		<head>
+			<title></title>
+		</head>
 	<body>
 	</body>
 </html>
@@ -19,8 +19,8 @@
 	//if statement so navigation only displays when user is logged in
 	if(authenticateUser()){
 
-	//this allows the link to show up
-	require_once(__DIR__ . "/view/navigation.php");
+		//this allows the link to show up
+		require_once(__DIR__ . "/view/navigation.php");
 	}
 
 	require_once(__DIR__ . "/controller/create-db.php");
