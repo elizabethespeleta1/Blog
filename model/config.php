@@ -5,6 +5,9 @@
 	//this is a session it preserves & makes info availabe throughout the webpage
 	//we use sessions to save the databse object & its only created once
 	session_start();
+	//when you start a session the session gets an id which remains constant
+	//it uses the original session create new session with a new id and delete the old session
+	session_regenerate_id(true);
 
 	//is the path to all our project files
 	$path = "/blog/";

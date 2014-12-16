@@ -28,6 +28,10 @@
 			//to check variable  password  =  password stored in the database
 			// === checks checks te value and type
 			if($row["password"] === crypt($password, $row["salt"])){
+				//creating a new session variable
+				//this is an array of values
+				//to make the user authenticated / logged in
+				$_SESSION["authenticated"] = true;
 				echo "<p>Login Successful!</p>";
 			}
 			//if the password is invalid
@@ -36,7 +40,7 @@
 			}
 
 	}
-	//if the query fails or retrieve username
+	//runs rif the query fails or retrieve username
 	else{
 		echo "<p> Invalid username and password </p>";
 	}
