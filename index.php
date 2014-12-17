@@ -19,10 +19,17 @@
 		</div>
 
 		<div class="aboutme">
-			<h1 class="aboutmeh"> Gallery </h1>
+			<h1 class="aboutmeh"> About Me </h1>
 
 			<div class="stupiddetail">
 			</div>
+
+			<div class="abootme">
+			My name is Elizabeth.
+			And between you and me, I don't think Dan even lifts.
+			But anyway I'm an open book so, there's not much to say here, and I'm too lazy to type about myself so cheaaaaaaah. : )
+			</div>
+
 		</div>
 
 	</body>
