@@ -1,7 +1,6 @@
 <?php
 	//connect to the directory
 	require_once(__DIR__ . "/../model/config.php");
-
 	//using the query variable to select from the posts table
 	$query = "SELECT * FROM posts";
 	//result gets posts from the database
@@ -15,7 +14,7 @@
 			echo "<div class = 'posts'>";
 
 			// were using h2 so the title is larger and were grabbing from the row the title is in
-			echo "<h2>" . $row['title'] . "</h2>";
+			echo "<h2 class='titledoe'>" . $row['title'] . "</h2>";
 
 			// this is for space
 			echo "<br />";
@@ -27,6 +26,7 @@
 			echo "<br/>";
 			
 			echo "<p> Posted on: " . $row['DateTime'] . "</p>";
+
 
 			// this is closing the div
 			echo "</div>";

@@ -3,7 +3,28 @@
 		<head>
 			<title></title>
 		</head>
-	<body>
+	<body style="background-image: url(wall4.png)">
+		
+		<header class="imo">
+			<div class="text">
+				The Way I See It
+			</div>
+
+			<div class="textoh">
+				In My Humble Opinion
+			</div>
+		</header>
+
+		<div class="bar" style="background-image: url(wet.jpg)">
+		</div>
+
+		<div class="aboutme">
+			<h1> about me </h1>
+			
+			<div class="stupiddetail">
+			</div>
+		</div>
+
 	</body>
 </html>
 <?php
@@ -23,13 +44,14 @@
 		require_once(__DIR__ . "/view/navigation.php");
 	}
 
-	require_once(__DIR__ . "/controller/create-db.php");
+	//require_once(__DIR__ . "/controller/create-db.php");
 
 	//it has inserted code from footer and putting it in index php
-	require_once(__DIR__ . "/view/footer.php");
+	
 
 	//this allows you to display posts from the database
 	require_once(__DIR__ . "/controller/read-posts.php");
+	require_once(__DIR__ . "/view/footer.php");
 ?>
 
 <!-- separating everything helps make it easier to maintain our code-->

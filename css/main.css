@@ -7,17 +7,54 @@
 	background-size: 100%;
 }
 
-#bodytho{
-	background: no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: 100%;
+.imo{
+	background-color:white;
+	padding:50px 0px 50px 0px;
 }
+
+.text{
+	padding: 0px 500px 0px 500px;
+	font-size: 40px;
+	color:black;
+}
+
+.textoh{
+	padding: 0px 500px 0px 550px;
+	margin: 0px;
+	font-size: 20px;
+	color:black;
+}
+
+.bar{
+	height:50px;
+}
+
+
+
+.posts{
+	background-color:white; 
+	color:black;
+	height:400px;
+	width:300px;
+	font-size: 15px;
+	padding: 0px 10px 0px 10px;
+	margin:50px 0px 10px 10px;
+}
+
+.titledoe{
+	font-family: 'Prata', serif;
+	font-size:20px;
+	padding:0px 10px 0px 10px;
+}
+
+
+
 
 h1{
 	font-family: 'Prata', serif;
 }
+
+
 
 ul{
 	list-style-type: none;
@@ -25,14 +62,13 @@ ul{
 
 a:link{
 	font-family: 'Prata', serif;
-	font-size: 40px;
+	font-size: 20px;
 	text-decoration: none;
-	background-color:white;
+	border-spacing: 3px;
 	color:black;
-	display:inline-block;
 	text-align:center;
-	padding: 20px 30px 20px 30px;
-	margin: 10px 10px 10px 500px;
+	width:120px;
+	margin:0px 0px 0px 20px;
 }
 a:active{
 	color: black;
@@ -46,14 +82,6 @@ a:hover{
 	color:white;
 }
 
-p{
-	background-color: white;
-	width: 150px;
-	font-family: 'Ubuntu Mono', ;
-	font-size: 30px;
-	padding: 20px 30px 20px 30px;
-	margin: 10px;
-}
 
 @media (max-width:320px){
 	body{
@@ -70,7 +98,7 @@ p{
 	}
 
 	p{
-		margin:25px;
+		
 	}
 
 	h1{
