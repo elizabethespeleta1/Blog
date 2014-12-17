@@ -19,8 +19,8 @@
 		</div>
 
 		<div class="aboutme">
-			<h1> about me </h1>
-			
+			<h1 class="aboutmeh"> Gallery </h1>
+
 			<div class="stupiddetail">
 			</div>
 		</div>
